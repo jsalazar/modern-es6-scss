@@ -1,0 +1,28 @@
+$demo-primary-color: #4398f9;
+$demo-header1-size: 3rem;
+$demo-font-stack: Helvetica, sans-serif;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.heading-link { 
+  @include transform(rotate(30deg)); 
+  color: #14aaaa;
+  position: absolute;
+  padding: 24px;
+}
+
+h1 {
+  font-family: $demo-font-stack;
+  color: $demo-primary-color;
+  size: $demo-header1-size;
+  
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
